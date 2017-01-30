@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+   	  	ngclassifieds
+   </title>
+</head>
+
+<!--To test an application we have to bootstrap it  and by boot strapping we mean the way the application gets itself going and we do it by using an directive named ng-app -->
+
+<!--We have tied our controller wit the view(index.html) and scope object is used to enble communication between communicator and view and model in angular is data model and it is an object which contains data and scope object share the data model between view and communicator -->
+
+<body ng-app="ngClassifieds" ng-controller="classifiedsCtrl">
+
+    <h1>{{ message }}</h1> 
+	<h1>{{ name.first + " " + name.last}}</h1> 
+
+	
+
+  
+
+<!--We are making use of scripts present in node_modules and that is angular.js-->
+<script src="node_modules/angular/angular.js"></script>
+
+<!--We are making use of scripts created in scripts directory and that is app.js-->
+<script src="scripts/app.js"></script>
+
+<!--Refernce to the controller script which contains scope object-->
+<script src="components/classifieds.ctr.js"></script>
+
+</body>
+</html>
